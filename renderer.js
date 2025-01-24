@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
   try {
-    // const data = await window.electronAPI.fetchDataFromNavidrome();
-    const data = { example: 'static data' }; // Remplacez par des données statiques
-    console.log('Data from Navidrome API:', data);
+    const data = await window.electronAPI.fetchDataFromNavidrome();
+    console.log('Data from Navidrome API:', data); // Ajoutez ce log
     const dataContainer = document.getElementById('data-container');
     dataContainer.innerText = JSON.stringify(data, null, 2);
   } catch (error) {

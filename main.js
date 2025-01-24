@@ -1,5 +1,6 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
+const axios = require('axios');
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
@@ -11,7 +12,7 @@ function createWindow() {
       contextIsolation: false,
     },
   });
-  
+
   mainWindow.loadFile('index.html');
 }
 
@@ -26,10 +27,6 @@ app.whenReady().then(() => {
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit();
 });
-
-
-const { ipcMain } = require('electron');
-const axios = require('axios');
 
 ipcMain.handle('fetch-data-from-navidrome', async (event) => {
   try {
