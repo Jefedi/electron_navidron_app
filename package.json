@@ -1,0 +1,12 @@
+{
+  "name": "electron_navidron_app",
+  "version": "0.0.1",
+  "description": "app for windows desctop for lisen navidroume music ",
+  "license": "ISC",
+  "author": "jefe",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
