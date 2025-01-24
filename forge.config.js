@@ -2,19 +2,19 @@ const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 
 module.exports = {
-    publishers: [
+  publishers: [
       {
         name: '@electron-forge/publisher-github',
         config: {
-          repository: {
-            owner: 'Jefedi',
-            name: 'electron_navidron_app',
-          },
-          prerelease: false,
-          draft: true
-        }
+         repository: {
+           owner: 'Jefedi',
+           name: 'electron_navidron_app',
+        },
+        prerelease: false,
+        draft: true
       }
-    ],
+    }
+  ],
   packagerConfig: {
     asar: true,
   },
