@@ -1,14 +1,14 @@
 {
-  "name": "electron_navidron_app",
+  "name": "electron_navidroume_app",
   "version": "0.0.1",
-  "description": "app for windows desctop for lisen navidroume music ",
-  "license": "ISC",
-  "author": "jefe",
-  "type": "commonjs",
+  "description": "App windows navidroume",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "jefe",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^34.0.1"
   }
