@@ -7,7 +7,7 @@ module.exports = {
         name: '@electron-forge/publisher-github',
         config: {
           repository: {
-            owner: 'Jefe',
+            owner: 'Jefedi',
             name: 'electron_navidron_app',
           },
           prerelease: false,
